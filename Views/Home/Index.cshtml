@@ -1,8 +1,58 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Login UDEP";
 }
+@model Udep.Models.LoginViewModel
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="row justify-content-center">
+    <div class="col-md-6 col-lg-5">
+        <div class="login-card">
+            <!-- Logo UDEP -->
+            <div class="text-center mb-4">
+                <div class="logo-container">
+                    <h1 class="logo-text">UDEP</h1>
+                    <span class="badge bg-primary">Biblioteca</span>
+                </div>
+                <div class="mt-2">
+                    <span class="badge bg-secondary">UDEP Virtual</span>
+                    <span class="badge bg-secondary">Correo</span>
+                    <span class="badge bg-secondary">Mapa del sitio</span>
+                </div>
+            </div>
+
+            <!-- Título SIGA -->
+            <div class="text-center mb-4">
+                <div class="siga-container">
+                    <span class="siga-label">SIGA docentes</span>
+                    <h2 class="siga-title">SIGA</h2>
+                    <p class="siga-subtitle">Sistema Integrado de Gestión Académica</p>
+                </div>
+            </div>
+
+            <!-- Mensaje de Office365 -->
+            <div class="alert alert-info text-center" role="alert">
+                <i class="fas fa-info-circle"></i>
+                Ahora puedes acceder a SIGA con tu cuenta de Office365
+            </div>
+
+            <!-- Formulario de Login -->
+            <form asp-action="Login" method="post">
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-primary w-100 btn-office">
+                        <i class="fas fa-envelope me-2"></i>
+                        Iniciar sesión con Office365
+                    </button>
+                </div>
+
+                <div class="text-center">
+                    <a href="#" class="text-decoration-none forgot-password">
+                        ¿Olvidaste tu contraseña?
+                    </a>
+                </div>
+
+                <div class="text-center mt-3">
+                    <span class="badge bg-dark">SECRETO</span>
+                </div>
+            </form>
+        </div>
+    </div>
 </div>

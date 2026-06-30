@@ -1,0 +1,37 @@
+/* _content/Udep/Views/Shared/_Layout.cshtml.rz.scp.css */
+.navbar[b-9u21yni5n9]{
+
+    background:#2f2f2f;
+    color:white;
+    height:42px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 40px;
+
+}
+
+.navbar ul[b-9u21yni5n9]{
+
+    display:flex;
+    list-style:none;
+    gap:30px;
+
+}
+
+.navbar a[b-9u21yni5n9]{
+
+    color:white;
+    text-decoration:none;
+    font-size:14px;
+
+}
+
+.brand[b-9u21yni5n9]{
+
+    font-size:34px;
+    font-weight:bold;
+
+}
