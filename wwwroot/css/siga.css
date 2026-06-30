@@ -1,0 +1,180 @@
+/* Reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* Contenedor Flexbox Principal */
+.dashboard-wrapper {
+    display: flex;
+    height: 100vh; /* 100% de la altura de la ventana */
+    width: 100%;
+    overflow: hidden; /* Evita scroll en la página completa */
+}
+
+/* --- BARRA LATERAL (SIDEBAR) --- */
+.sidebar {
+    width: 250px; /* Ancho fijo del menú */
+    background-color: #2b2a2a; /* Gris oscuro */
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+/* Cabecera del Sidebar con fondo de imagen */
+.sidebar-header {
+    /* Aquí puedes poner la URL real de la imagen de fondo */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?auto=format&fit=crop&q=80&w=300') center/cover;
+    padding: 15px 20px;
+    color: white;
+    border-bottom: 2px solid #c23824; /* Línea roja delgada */
+}
+
+.brand {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.brand strong {
+    font-weight: 800;
+}
+
+.user-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.user-actions {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+/* Menú de navegación */
+.sidebar-menu {
+    flex: 1;
+    overflow-y: auto; /* Scroll solo en el menú si es muy largo */
+}
+
+.sidebar-menu ul {
+    list-style: none;
+}
+
+/* Estilos de los enlaces del menú principal */
+.main-menu li a {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: #b0b0b0;
+    text-decoration: none;
+    font-size: 0.85rem;
+    border-bottom: 1px solid #3a3939;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.main-menu li a:hover {
+    background-color: #383737;
+    color: #ffffff;
+}
+
+/* Íconos y Flechas */
+.menu-icon {
+    width: 20px; /* Asegura que todos los íconos ocupen el mismo espacio */
+    margin-right: 15px;
+    text-align: center;
+}
+
+.arrow {
+    margin-left: auto; /* Empuja la flecha a la derecha */
+    font-size: 0.6rem;
+    color: #555;
+}
+
+/* Ítem Activo (Mis asignaturas) */
+.main-menu li.active a {
+    color: #ffffff;
+    background-color: #383737;
+}
+
+.main-menu li.active .menu-icon {
+    color: #3498db; /* Ícono azul */
+}
+
+/* Menú Inferior */
+.bottom-menu {
+    border-top: 1px solid #444;
+    padding: 10px 0;
+}
+
+.bottom-menu li a {
+    display: block;
+    padding: 6px 20px;
+    color: #888;
+    text-decoration: none;
+    font-size: 0.75rem;
+}
+
+.bottom-menu li a:hover {
+    color: #bbb;
+}
+
+/* Custom Scrollbar para el menú */
+.sidebar-menu::-webkit-scrollbar {
+    width: 6px;
+}
+.sidebar-menu::-webkit-scrollbar-thumb {
+    background-color: #555;
+}
+
+/* --- CONTENIDO PRINCIPAL --- */
+.main-content {
+    flex: 1; /* Ocupa el resto del espacio disponible a la derecha */
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Barra superior del contenido */
+.content-header {
+    background-color: #e9e9e9;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.content-header h1 {
+    font-size: 1.8rem;
+    color: #666;
+    font-weight: 300;
+}
+
+/* Etiqueta de Cargando */
+.loading-badge {
+    background-color: #fcf4a3; /* Amarillo pastel */
+    color: #8a6d3b;
+    padding: 5px 15px;
+    font-size: 0.75rem;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Área del cuerpo de la página */
+.content-body {
+    padding: 30px;
+    flex: 1;
+    overflow-y: auto;
+}

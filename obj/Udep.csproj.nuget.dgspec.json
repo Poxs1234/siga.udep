@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jefry\\Desktop\\Udep\\Udep.csproj": {}
+    "C:\\Users\\Fiorella\\Desktop\\siga udep\\siga.udep\\Udep.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jefry\\Desktop\\Udep\\Udep.csproj": {
+    "C:\\Users\\Fiorella\\Desktop\\siga udep\\siga.udep\\Udep.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jefry\\Desktop\\Udep\\Udep.csproj",
+        "projectUniqueName": "C:\\Users\\Fiorella\\Desktop\\siga udep\\siga.udep\\Udep.csproj",
         "projectName": "Udep",
-        "projectPath": "C:\\Users\\Jefry\\Desktop\\Udep\\Udep.csproj",
-        "packagesPath": "C:\\Users\\Jefry\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jefry\\Desktop\\Udep\\obj\\",
+        "projectPath": "C:\\Users\\Fiorella\\Desktop\\siga udep\\siga.udep\\Udep.csproj",
+        "packagesPath": "C:\\Users\\Fiorella\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Fiorella\\Desktop\\siga udep\\siga.udep\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Jefry\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Fiorella\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
