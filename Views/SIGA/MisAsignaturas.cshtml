@@ -1,0 +1,79 @@
+@{
+    Layout = null;
+}
+
+<div id="view-summary">
+    <div class="semester-badge">DERECHO (2026-I)</div>
+
+    <h3 class="section-title">Resumen de evaluaciones</h3>
+    <div class="controls-pm">
+        <button><i class="fa-solid fa-plus"></i></button>
+        <button><i class="fa-solid fa-minus"></i></button>
+    </div>
+
+    <ul class="course-list">
+        <li>
+            <button class="btn-course" onclick="showCourseDetails('FAF', 'ANTROPOLOGÍA FILOSÓFICA')">
+                <i class="fa-solid fa-magnifying-glass"></i> FAF
+            </button>
+            <span class="course-name">ANTROPOLOGÍA FILOSÓFICA (B)</span>
+            <i class="fa-solid fa-flag flag-icon"></i>
+        </li>
+        <li>
+            <button class="btn-course" onclick="showCourseDetails('FHD', 'HISTORIA DEL DERECHO')">
+                <i class="fa-solid fa-magnifying-glass"></i> FHD
+            </button>
+            <span class="course-name">HISTORIA DEL DERECHO (B)</span>
+            <i class="fa-solid fa-flag flag-icon"></i>
+        </li>
+        <li>
+            <button class="btn-course" onclick="showCourseDetails('HC3', 'HISTORIA Y CULTURA CONTEMPORÁNEA')">
+                <i class="fa-solid fa-magnifying-glass"></i> HC3
+            </button>
+            <span class="course-name">HISTORIA Y CULTURA CONTEMPORÁNEA (C)</span>
+        </li>
+        <li>
+            <button class="btn-course" onclick="showCourseDetails('JP1', 'DERECHO PENAL 1')">
+                <i class="fa-solid fa-magnifying-glass"></i> JP1
+            </button>
+            <span class="course-name">DERECHO PENAL 1 (A)</span>
+        </li>
+        <li>
+            <button class="btn-course" onclick="showCourseDetails('LF', 'LÓGICA 1')">
+                <i class="fa-solid fa-magnifying-glass"></i> LF
+            </button>
+            <span class="course-name">LÓGICA (B)</span>
+        </li>
+        <li>
+            <button class="btn-course" onclick="showCourseDetails('PC1', 'DERECHO CONSTITUCIONAL 1')">
+                <i class="fa-solid fa-magnifying-glass"></i> PC1
+            </button>
+            <span class="course-name">DERECHO CONSTITUCIONAL 1 (A)</span>
+        </li>
+    </ul>
+    <div class="controls-pm">
+        <button><i class="fa-solid fa-plus"></i></button>
+        <button><i class="fa-solid fa-minus"></i></button>
+    </div>
+</div>
+
+<div id="view-details" style="display: none;">
+    <div id="course-detail-FAF" class="course-detail-panel" style="display: none;">
+        @{ await Html.RenderPartialAsync("CursoFAF"); }
+    </div>
+    <div id="course-detail-FHD" class="course-detail-panel" style="display: none;">
+        @{ await Html.RenderPartialAsync("CursoFHD"); }
+    </div>
+    <div id="course-detail-HC3" class="course-detail-panel" style="display: none;">
+        @{ await Html.RenderPartialAsync("CursoHC3"); }
+    </div>
+    <div id="course-detail-JP1" class="course-detail-panel" style="display: none;">
+        @{ await Html.RenderPartialAsync("CursoJP1"); }
+    </div>
+    <div id="course-detail-LF" class="course-detail-panel" style="display: none;">
+        @{ await Html.RenderPartialAsync("CursoLF"); }
+    </div>
+    <div id="course-detail-PC1" class="course-detail-panel" style="display: none;">
+        @{ await Html.RenderPartialAsync("CursoPC1"); }
+    </div>
+</div>

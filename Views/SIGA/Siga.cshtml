@@ -31,9 +31,9 @@
 
             <nav class="sidebar-menu">
                 <ul class="main-menu">
-                    <li><a href="#"><i class="fa-solid fa-flag menu-icon"></i> Avisos <i class="fa-solid fa-chevron-right arrow"></i></a></li>
+                    <li><a href="#" data-view="view-avisos"><i class="fa-solid fa-flag menu-icon"></i> Avisos <i class="fa-solid fa-chevron-right arrow"></i></a></li>
                     
-                    <li class="active"><a href="#"><i class="fa-solid fa-book menu-icon"></i> Mis asignaturas <i class="fa-solid fa-chevron-right arrow"></i></a></li>
+                    <li class="active"><a href="#" data-view="view-mis-asignaturas"><i class="fa-solid fa-book menu-icon"></i> Mis asignaturas <i class="fa-solid fa-chevron-right arrow"></i></a></li>
                     
                     <li><a href="#"><i class="fa-solid fa-clock menu-icon"></i> Mi horario <i class="fa-solid fa-chevron-right arrow"></i></a></li>
                     <li><a href="#"><i class="fa-solid fa-bookmark menu-icon"></i> Mi perfil académico <i class="fa-solid fa-chevron-right arrow"></i></a></li>
@@ -59,17 +59,111 @@
 
         <main class="main-content">
             <header class="content-header">
-                <h1>SIGA</h1>
-                <div class="loading-badge">
+                <h1 id="pageTitle">SIGA</h1>
+                <div class="loading-badge hidden" id="loadingBadge">
                     <i class="fa-solid fa-rotate"></i> Cargando...
                 </div>
             </header>
 
             <div class="content-body">
+                <div id="view-avisos" class="page-view" style="display: none;">
+                    @{ await Html.RenderPartialAsync("Avisos"); }
                 </div>
+
+                <div id="view-mis-asignaturas" class="page-view">
+                    @{ await Html.RenderPartialAsync("MisAsignaturas"); }
+                </div>
+            </div>
         </main>
 
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const badge = document.getElementById('loadingBadge');
+            const links = document.querySelectorAll('.sidebar-menu .main-menu a, .bottom-menu a');
+            const views = document.querySelectorAll('.page-view');
+            let timeoutId;
+
+            function showView(viewId) {
+                const pageTitle = document.getElementById('pageTitle');
+                const titles = {
+                    'view-avisos': 'AVISOS',
+                    'view-mis-asignaturas': 'MIS ASIGNATURAS'
+                };
+
+                views.forEach(function (view) {
+                    view.style.display = view.id === viewId ? 'block' : 'none';
+                });
+
+                document.querySelectorAll('.main-menu li').forEach(function (item) {
+                    item.classList.remove('active');
+                });
+
+                const activeLink = document.querySelector('.main-menu a[data-view="' + viewId + '"]');
+                if (activeLink) {
+                    activeLink.closest('li').classList.add('active');
+                }
+
+                pageTitle.textContent = titles[viewId] || 'SIGA';
+            }
+
+            links.forEach(function (link) {
+                link.addEventListener('click', function (event) {
+                    if (this.getAttribute('href') === '#') {
+                        event.preventDefault();
+                    }
+
+                    const viewId = this.getAttribute('data-view');
+                    if (viewId) {
+                        showView(viewId);
+                    }
+
+                    badge.classList.remove('hidden');
+                    clearTimeout(timeoutId);
+                    timeoutId = setTimeout(function () {
+                        badge.classList.add('hidden');
+                    }, 2000);
+                });
+            });
+
+            showView('view-mis-asignaturas');
+        });
+        // Función para mostrar el detalle de un curso específico
+        function showCourseDetails(courseCode, courseName) {
+            const pageTitle = document.getElementById('pageTitle');
+            const detailPanels = document.querySelectorAll('.course-detail-panel');
+
+            pageTitle.textContent = 'MIS ASIGNATURAS - ' + courseCode;
+
+            document.getElementById('view-summary').style.display = 'none';
+            document.getElementById('view-details').style.display = 'block';
+
+            detailPanels.forEach(function (panel) {
+                panel.style.display = 'none';
+            });
+
+            const selectedPanel = document.getElementById('course-detail-' + courseCode);
+            if (selectedPanel) {
+                selectedPanel.style.display = 'block';
+            }
+        }
+
+        // Función para volver a la lista principal
+        function goBackToSummary(event) {
+            event.preventDefault(); // Evita que la página salte hacia arriba
+            
+            const pageTitle = document.getElementById('pageTitle');
+            pageTitle.textContent = 'MIS ASIGNATURAS';
+
+            document.querySelectorAll('.course-detail-panel').forEach(function (panel) {
+                panel.style.display = 'none';
+            });
+
+            document.getElementById('view-details').style.display = 'none';
+            document.getElementById('view-summary').style.display = 'block';
+        }
+    </script>
 
 </body>
 </html>
