@@ -9,81 +9,81 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Udep
 build_property.RootNamespace = Udep
-build_property.ProjectDir = C:\Users\Fiorella\Desktop\siga udep\siga.udep\
+build_property.ProjectDir = C:\Users\Jefry\Desktop\yara\siga.udep\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Fiorella\Desktop\siga udep\siga.udep
+build_property.MSBuildProjectDirectory = C:\Users\Jefry\Desktop\yara\siga.udep
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/Fiorella/Desktop/siga udep/siga.udep/Views/Home/Index.cshtml]
+[C:/Users/Jefry/Desktop/yara/siga.udep/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fiorella/Desktop/siga udep/siga.udep/Views/Home/Privacy.cshtml]
+[C:/Users/Jefry/Desktop/yara/siga.udep/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fiorella/Desktop/siga udep/siga.udep/Views/Shared/Error.cshtml]
+[C:/Users/Jefry/Desktop/yara/siga.udep/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fiorella/Desktop/siga udep/siga.udep/Views/Shared/_Layout.cshtml]
+[C:/Users/Jefry/Desktop/yara/siga.udep/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fiorella/Desktop/siga udep/siga.udep/Views/Shared/_SIGALayout.cshtml]
+[C:/Users/Jefry/Desktop/yara/siga.udep/Views/Shared/_SIGALayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TSUdBTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fiorella/Desktop/siga udep/siga.udep/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Jefry/Desktop/yara/siga.udep/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fiorella/Desktop/siga udep/siga.udep/Views/SIGA/Antro.cshtml]
+[C:/Users/Jefry/Desktop/yara/siga.udep/Views/SIGA/Antro.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU0lHQVxBbnRyby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fiorella/Desktop/siga udep/siga.udep/Views/SIGA/Avisos.cshtml]
+[C:/Users/Jefry/Desktop/yara/siga.udep/Views/SIGA/Avisos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU0lHQVxBdmlzb3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fiorella/Desktop/siga udep/siga.udep/Views/SIGA/Consti.cshtml]
+[C:/Users/Jefry/Desktop/yara/siga.udep/Views/SIGA/Consti.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU0lHQVxDb25zdGkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fiorella/Desktop/siga udep/siga.udep/Views/SIGA/Derecho.cshtml]
+[C:/Users/Jefry/Desktop/yara/siga.udep/Views/SIGA/Derecho.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU0lHQVxEZXJlY2hvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fiorella/Desktop/siga udep/siga.udep/Views/SIGA/Historia.cshtml]
+[C:/Users/Jefry/Desktop/yara/siga.udep/Views/SIGA/Historia.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU0lHQVxIaXN0b3JpYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fiorella/Desktop/siga udep/siga.udep/Views/SIGA/Logica.cshtml]
+[C:/Users/Jefry/Desktop/yara/siga.udep/Views/SIGA/Logica.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU0lHQVxMb2dpY2EuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fiorella/Desktop/siga udep/siga.udep/Views/SIGA/MisAsignaturas.cshtml]
+[C:/Users/Jefry/Desktop/yara/siga.udep/Views/SIGA/MisAsignaturas.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU0lHQVxNaXNBc2lnbmF0dXJhcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fiorella/Desktop/siga udep/siga.udep/Views/SIGA/Penal.cshtml]
+[C:/Users/Jefry/Desktop/yara/siga.udep/Views/SIGA/Penal.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU0lHQVxQZW5hbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fiorella/Desktop/siga udep/siga.udep/Views/SIGA/Siga.cshtml]
+[C:/Users/Jefry/Desktop/yara/siga.udep/Views/SIGA/Siga.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU0lHQVxTaWdhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fiorella/Desktop/siga udep/siga.udep/Views/_ViewImports.cshtml]
+[C:/Users/Jefry/Desktop/yara/siga.udep/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fiorella/Desktop/siga udep/siga.udep/Views/_ViewStart.cshtml]
+[C:/Users/Jefry/Desktop/yara/siga.udep/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
