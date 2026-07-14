@@ -91,8 +91,6 @@ C:\Users\Jefry\Desktop\Udep\obj\Debug\net9.0\Udep.pdb
 C:\Users\Jefry\Desktop\Udep\obj\Debug\net9.0\Udep.genruntimeconfig.cache
 C:\Users\Jefry\Desktop\Udep\obj\Debug\net9.0\ref\Udep.dll
 C:\Users\Jefry\Desktop\Udep\obj\Debug\net9.0\compressed\ol6msnzs8b-ufh41rqoie.gz
-C:\Users\Fiorella\Desktop\siga udep\siga.udep\bin\Debug\net9.0\Udep.exe
-C:\Users\Fiorella\Desktop\siga udep\siga.udep\bin\Debug\net9.0\Udep.dll
 C:\Users\Jefry\Desktop\clon udep\siga.udep\bin\Debug\net9.0\appsettings.Development.json
 C:\Users\Jefry\Desktop\clon udep\siga.udep\bin\Debug\net9.0\appsettings.json
 C:\Users\Jefry\Desktop\clon udep\siga.udep\bin\Debug\net9.0\Udep.staticwebassets.runtime.json
@@ -190,6 +188,11 @@ C:\Users\Fiorella\Desktop\siga udep\siga.udep\bin\Debug\net9.0\appsettings.Devel
 C:\Users\Fiorella\Desktop\siga udep\siga.udep\bin\Debug\net9.0\appsettings.json
 C:\Users\Fiorella\Desktop\siga udep\siga.udep\bin\Debug\net9.0\Udep.staticwebassets.runtime.json
 C:\Users\Fiorella\Desktop\siga udep\siga.udep\bin\Debug\net9.0\Udep.staticwebassets.endpoints.json
+C:\Users\Fiorella\Desktop\siga udep\siga.udep\bin\Debug\net9.0\Udep.exe
+C:\Users\Fiorella\Desktop\siga udep\siga.udep\bin\Debug\net9.0\Udep.deps.json
+C:\Users\Fiorella\Desktop\siga udep\siga.udep\bin\Debug\net9.0\Udep.runtimeconfig.json
+C:\Users\Fiorella\Desktop\siga udep\siga.udep\bin\Debug\net9.0\Udep.dll
+C:\Users\Fiorella\Desktop\siga udep\siga.udep\bin\Debug\net9.0\Udep.pdb
 C:\Users\Fiorella\Desktop\siga udep\siga.udep\obj\Debug\net9.0\rpswa.dswa.cache.json
 C:\Users\Fiorella\Desktop\siga udep\siga.udep\obj\Debug\net9.0\Udep.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Fiorella\Desktop\siga udep\siga.udep\obj\Debug\net9.0\Udep.AssemblyInfoInputs.cache
@@ -203,7 +206,7 @@ C:\Users\Fiorella\Desktop\siga udep\siga.udep\obj\Debug\net9.0\rjimswa.dswa.cach
 C:\Users\Fiorella\Desktop\siga udep\siga.udep\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
 C:\Users\Fiorella\Desktop\siga udep\siga.udep\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
 C:\Users\Fiorella\Desktop\siga udep\siga.udep\obj\Debug\net9.0\scopedcss\bundle\Udep.styles.css
-C:\Users\Fiorella\Desktop\siga udep\siga.udep\obj\Debug\net9.0\compressed\xyw57yl70b-6x1ns8hird.gz
+C:\Users\Fiorella\Desktop\siga udep\siga.udep\obj\Debug\net9.0\compressed\xyw57yl70b-v4xfo9zif5.gz
 C:\Users\Fiorella\Desktop\siga udep\siga.udep\obj\Debug\net9.0\compressed\pczpzfl2tx-61n19gt1b8.gz
 C:\Users\Fiorella\Desktop\siga udep\siga.udep\obj\Debug\net9.0\compressed\gjh5nsfsyb-xtxxf3hu2r.gz
 C:\Users\Fiorella\Desktop\siga udep\siga.udep\obj\Debug\net9.0\compressed\ejmejlzhfc-t1cqhe9u97.gz
@@ -272,8 +275,5 @@ C:\Users\Fiorella\Desktop\siga udep\siga.udep\obj\Debug\net9.0\staticwebassets.b
 C:\Users\Fiorella\Desktop\siga udep\siga.udep\obj\Debug\net9.0\Udep.dll
 C:\Users\Fiorella\Desktop\siga udep\siga.udep\obj\Debug\net9.0\refint\Udep.dll
 C:\Users\Fiorella\Desktop\siga udep\siga.udep\obj\Debug\net9.0\Udep.pdb
-C:\Users\Fiorella\Desktop\siga udep\siga.udep\bin\Debug\net9.0\Udep.deps.json
-C:\Users\Fiorella\Desktop\siga udep\siga.udep\bin\Debug\net9.0\Udep.runtimeconfig.json
-C:\Users\Fiorella\Desktop\siga udep\siga.udep\bin\Debug\net9.0\Udep.pdb
 C:\Users\Fiorella\Desktop\siga udep\siga.udep\obj\Debug\net9.0\Udep.genruntimeconfig.cache
 C:\Users\Fiorella\Desktop\siga udep\siga.udep\obj\Debug\net9.0\ref\Udep.dll

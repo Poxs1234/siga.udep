@@ -459,3 +459,73 @@ body {
     line-height: 1.5;
     color: #000000;
 }
+
+
+/* --- ESTILOS PARA DETALLE DE EVALUACIÓN --- */
+.cuadro {
+    border: 1px solid #d0d0d0;
+    background-color: #ffffff;
+    padding: 20px 25px;
+    max-width: 100%;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: #333;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+/* SUB CUADRO AMARILLO - SOLO FÓRMULA */
+.subcuadro-amarillo {
+    background-color: #fef9e7;
+    border: 1px solid #f9e79f;
+    padding: 18px 20px;
+    margin-bottom: 12px;
+    border-radius: 2px;
+}
+
+.subcuadro-amarillo .formula-math {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    color: #2c3e50;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-align: center;
+    padding: 5px 0;
+}
+
+/* SUB CUADRO CELESTE - NOTA ADICIONAL */
+.subcuadro-celeste {
+    background-color: #ebf5fb;
+    border: 1px solid #aed6f1;
+    padding: 12px 18px;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    color: #1a5276;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.highlight {
+    color: #c0392b;
+    font-weight: 700;
+}
+
+.cuadro em {
+    color: #7f8c8d;
+    font-size: 12px;
+    display: block;
+    margin-top: 8px;
+    font-style: italic;
+    text-align: right;
+    border-top: 1px dashed #e0e0e0;
+    padding-top: 10px;
+}
+
+h3 {
+    color: #2c3e50;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
