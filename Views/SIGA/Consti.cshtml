@@ -1,18 +1,21 @@
 @{
     Layout = null;
 }
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="~/css/siga.css">
+</head>
 
 <div class="course-detail-view">
-
     <a href="#" class="back-link" onclick="goBackToSummary(event)">&lt; Ir al resumen</a>
 
     <div class="course-header">
         <div class="course-info">
-            <h1 class="hola">DERECHO CONSTITUCIONAL 1</h1>
+            <h1>DERECHO CONSTITUCIONAL 1</h1>
             <br>
             <div class="info-row">
                 <i class="fa-solid fa-user-tie icon-gray"></i>
-                <strong>Profesor(es):</strong> <a href="#" class="prof-link">CARMEN PAULA DAVILA , JOSE LUIS SARDON</a>
+                <strong>Profesor(es):</strong> <a href="#" class="prof-link">CARMEN PAULA DAVILA, JOSE LUIS SARDON</a>
             </div>
             <div class="info-row">
                 <i class="fa-solid fa-table-cells icon-gray"></i>
@@ -21,17 +24,53 @@
         </div>
 
         <div class="mini-course-list">
-            <div class="mini-course-item"><span class="code red">FAF</span> ANTROPOLOGÍA FILOSÓFICA <i class="fa-solid fa-magnifying-glass icon-gray"></i></div>
-            <div class="mini-course-item"><span class="code red">FHD</span> HISTORIA DEL DERECHO <i class="fa-solid fa-magnifying-glass icon-gray"></i></div>
-            <div class="mini-course-item"><span class="code red">HC3</span> HISTORIA Y CULTURA CONTEMPORÁNEA <i class="fa-solid fa-magnifying-glass icon-gray"></i></div>
-            <div class="mini-course-item"><span class="code red">JP1</span> DERECHO PENAL 1 <i class="fa-solid fa-magnifying-glass icon-gray"></i></div>
-            <div class="mini-course-item"><span class="code red">LF</span> LÓGICA 1 <i class="fa-solid fa-magnifying-glass icon-gray"></i></div>
-            <div class="mini-course-item"><span class="code red">PC1</span> DERECHO CONSTITUCIONAL 1 <i class="fa-solid fa-magnifying-glass icon-gray"></i></div>
+            <div class="mini-course-item">
+                <span class="code red">FAF</span>
+                <span class="course-title">ANTROPOLOGÍA FILOSÓFICA</span>
+                <button class="btn-search-mini" onclick="window.location.href='@Url.Action("Antro", "SIGA")'">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <div class="mini-course-item">
+                <span class="code red">FHD</span>
+                <span class="course-title">HISTORIA DEL DERECHO</span>
+                <button class="btn-search-mini" onclick="window.location.href='@Url.Action("Derecho", "SIGA")'">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <div class="mini-course-item">
+                <span class="code red">HC3</span>
+                <span class="course-title">HISTORIA Y CULTURA CONTEMPORÁNEA</span>
+                <button class="btn-search-mini" onclick="window.location.href='@Url.Action("Historia", "SIGA")'">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <div class="mini-course-item">
+                <span class="code red">JP1</span>
+                <span class="course-title">DERECHO PENAL 1</span>
+                <button class="btn-search-mini" onclick="window.location.href='@Url.Action("Penal", "SIGA")'">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <div class="mini-course-item">
+                <span class="code red">LF</span>
+                <span class="course-title">LÓGICA</span>
+                <button class="btn-search-mini" onclick="window.location.href='@Url.Action("Logica", "SIGA")'">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <div class="mini-course-item">
+                <span class="code red">PC1</span>
+                <span class="course-title">DERECHO CONSTITUCIONAL 1</span>
+                <button class="btn-search-mini" onclick="window.location.href='@Url.Action("Consti", "SIGA")'">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
         </div>
     </div>
-    
+
     <br>
-    <br> 
+    <br>
 
     <div class="tabs">
         <button class="tab active">Evaluaciones</button>
@@ -42,41 +81,40 @@
         <button class="tab">Sílabo</button>
     </div>
 
-    
     <div class="evaluation-section">
         <div class="section-header">Examen</div>
-            <table class="grades-table">
-                <thead>
-                    <tr>
-                        <th>Fecha</th>
-                        <th>Evaluación</th>
-                        <th>Peso</th>
-                        <th>Anulable</th>
-                        <th>Informativa</th>
-                        <th>Estado</th>
-                        <th>Nota</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>19-05-2026</td>
-                        <td><a href="#">Examen 1</a></td>
-                        <td>50</td>
-                        <td><i class="fa-solid fa-xmark"></i></td>
-                        <td><i class="fa-solid fa-xmark"></i></td>
-                        <td>Acta cerrada con reclamos corregidos</td>
-                        <td>15</td>
-                    </tr>
-                    <tr>
-                        <td>08-07-2026</td>
-                        <td><a href="#">Examen 2</a></td>
-                        <td>50</td>
-                        <td><i class="fa-solid fa-xmark"></i></td>
-                        <td><i class="fa-solid fa-xmark"></i></td>
-                        <td>Acta cerrada con reclamos corregidos</td>
-                        <td>15</td>
-                    </tr>
-                </tbody>
-            </table>
-    </div>     
+        <table class="grades-table">
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Evaluación</th>
+                    <th>Peso</th>
+                    <th>Anulable</th>
+                    <th>Informativa</th>
+                    <th>Estado</th>
+                    <th>Nota</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>19-05-2026</td>
+                    <td><a href="#">Examen 1</a></td>
+                    <td>50</td>
+                    <td><i class="fa-solid fa-xmark"></i></td>
+                    <td><i class="fa-solid fa-xmark"></i></td>
+                    <td>Acta cerrada con reclamos corregidos</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>08-07-2026</td>
+                    <td><a href="#">Examen 2</a></td>
+                    <td>50</td>
+                    <td><i class="fa-solid fa-xmark"></i></td>
+                    <td><i class="fa-solid fa-xmark"></i></td>
+                    <td>Acta cerrada con reclamos corregidos</td>
+                    <td>15</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>

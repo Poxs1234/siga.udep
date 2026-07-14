@@ -330,26 +330,51 @@ body {
 .prof-link { color: #3498db; text-decoration: none; }
 .icon-gray { color: #999; }
 
-/* Lista mini lateral */
+/* Lista mini lateral (Estilo actualizado) */
 .mini-course-list {
-    background: #f9f9f9;
-    padding: 10px;
-    border: 1px solid #eee;
-    font-size: 0.75rem;
-    min-width: 300px;
+    min-width: 540px;
+    background: transparent; /* Fondo limpio como en la imagen */
+    margin-top: 5px;
 }
 
 .mini-course-item {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 5px;
-    color: #555;
+    align-items: center;
+    padding: 8px 5px;
+    border-bottom: 1px solid #eaeaea; /* Línea separadora sutil */
+    color: #666;
+    font-size: 0.8rem;
+}
+
+/* El último elemento no necesita línea abajo */
+.mini-course-item:last-child {
+    border-bottom: none;
 }
 
 .mini-course-item .code.red {
-    color: #e74c3c;
-    font-weight: bold;
-    margin-right: 10px;
+    color: #d32f2f; /* Tono de rojo exacto */
+    font-weight: 600;
+    width: 45px; /* Ancho fijo para hacer una columna perfecta */
+}
+
+.mini-course-item .course-title {
+    flex: 1; /* Ocupa todo el espacio del medio empujando el botón a la derecha */
+}
+
+/* El nuevo botoncito de la lupa */
+.btn-search-mini {
+    background-color: #f8f8f8;
+    border: 1px solid #cccccc;
+    color: #555;
+    padding: 3px 6px;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 0.75rem;
+    transition: background-color 0.2s;
+}
+
+.btn-search-mini:hover {
+    background-color: #e0e0e0;
 }
 
 /* Pestañas */

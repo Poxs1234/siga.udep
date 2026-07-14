@@ -1,0 +1,66 @@
+@{
+    var pageTitle = ViewData["PageTitle"]?.ToString() ?? "SIGA";
+}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@pageTitle - UDEP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="~/css/siga.css">
+</head>
+<body>
+    <div class="dashboard-wrapper">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="brand">
+                    <strong>UDEP</strong> SIGA
+                </div>
+                <div class="user-profile">
+                    <span class="user-name">ALESSIA MORENO</span>
+                    <div class="user-actions">
+                        <i class="fa-solid fa-gear"></i>
+                        <i class="fa-solid fa-power-off"></i>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="sidebar-menu">
+                <ul class="main-menu">
+                    <li><a href="#"><i class="fa-solid fa-flag menu-icon"></i> Avisos <i class="fa-solid fa-chevron-right arrow"></i></a></li>
+                    <li class="active"><a href="@Url.Action("Siga", "SIGA")"><i class="fa-solid fa-book menu-icon"></i> Mis asignaturas <i class="fa-solid fa-chevron-right arrow"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-clock menu-icon"></i> Mi horario <i class="fa-solid fa-chevron-right arrow"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-bookmark menu-icon"></i> Mi perfil académico <i class="fa-solid fa-chevron-right arrow"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-user menu-icon"></i> Mi perfil personal <i class="fa-solid fa-chevron-right arrow"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-briefcase menu-icon"></i> Mi asesor <i class="fa-solid fa-chevron-right arrow"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-barcode menu-icon"></i> Pensiones <i class="fa-solid fa-chevron-right arrow"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-envelope menu-icon"></i> Mensajería <i class="fa-solid fa-chevron-right arrow"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-file-lines menu-icon"></i> Trámites académicos <i class="fa-solid fa-chevron-right arrow"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-globe menu-icon"></i> Intercambio estudiantil <i class="fa-solid fa-chevron-right arrow"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-building menu-icon"></i> Ambientes <i class="fa-solid fa-chevron-right arrow"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-cloud-arrow-down menu-icon"></i> Documentos oficiales <i class="fa-solid fa-chevron-right arrow"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-magnifying-glass menu-icon"></i> Buscar <i class="fa-solid fa-chevron-right arrow"></i></a></li>
+                </ul>
+
+                <ul class="bottom-menu">
+                    <li><a href="#">Universidad</a></li>
+                    <li><a href="#">Mapa de sitio</a></li>
+                    <li><a href="#">Reclamos, consultas y sugerencias</a></li>
+                    <li><a href="#">Guía de usuario</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="content-header">
+                <h1>@pageTitle</h1>
+            </header>
+
+            <div class="content-body">
+                @RenderBody()
+            </div>
+        </main>
+    </div>
+</body>
+</html>

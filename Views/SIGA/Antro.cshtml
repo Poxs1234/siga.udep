@@ -36,12 +36,48 @@
         </div>
 
         <div class="mini-course-list">
-            <div class="mini-course-item"><span class="code red">FAF</span> ANTROPOLOGÍA FILOSÓFICA <i class="fa-solid fa-magnifying-glass icon-gray"></i></div>
-            <div class="mini-course-item"><span class="code red">FHD</span> HISTORIA DEL DERECHO <i class="fa-solid fa-magnifying-glass icon-gray"></i></div>
-            <div class="mini-course-item"><span class="code red">HC3</span> HISTORIA Y CULTURA CONTEMPORÁNEA <i class="fa-solid fa-magnifying-glass icon-gray"></i></div>
-            <div class="mini-course-item"><span class="code red">JP1</span> DERECHO PENAL 1 <i class="fa-solid fa-magnifying-glass icon-gray"></i></div>
-            <div class="mini-course-item"><span class="code red">LF</span> LÓGICA 1 <i class="fa-solid fa-magnifying-glass icon-gray"></i></div>
-            <div class="mini-course-item"><span class="code red">PC1</span> DERECHO CONSTITUCIONAL 1 <i class="fa-solid fa-magnifying-glass icon-gray"></i></div>
+            <div class="mini-course-item">
+                <span class="code red">FAF</span> 
+                <span class="course-title">ANTROPOLOGÍA FILOSÓFICA</span> 
+                <button class="btn-search-mini" onclick="redirigirCurso('FAF')">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <div class="mini-course-item">
+                <span class="code red">FHD</span> 
+                <span class="course-title">HISTORIA DEL DERECHO</span> 
+                <button class="btn-search-mini" onclick="redirigirCurso('FHD')">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <div class="mini-course-item">
+                <span class="code red">HC3</span> 
+                <span class="course-title">HISTORIA Y CULTURA CONTEMPORÁNEA</span> 
+                <button class="btn-search-mini" onclick="redirigirCurso('HC3')">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <div class="mini-course-item">
+                <span class="code red">JP1</span> 
+                <span class="course-title">DERECHO PENAL 1</span> 
+                <button class="btn-search-mini" onclick="redirigirCurso('JP1')">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <div class="mini-course-item">
+                <span class="code red">LF</span> 
+                <span class="course-title">LÓGICA</span> 
+                <button class="btn-search-mini" onclick="redirigirCurso('LF')">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <div class="mini-course-item">
+                <span class="code red">PC1</span> 
+                <span class="course-title">DERECHO CONSTITUCIONAL 1</span> 
+                <button class="btn-search-mini" onclick="redirigirCurso('PC1')">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
         </div>
     </div>
 
@@ -154,3 +190,37 @@
     </div>
 
 </div>
+
+<script>
+    function redirigirCurso(codigo) {
+        // Opción 1: Si tienes un controlador específico para cada curso
+        // window.location.href = '@Url.Action("' + codigo + '", "SIGA")';
+        
+        // Opción 2: Redirigir a un método genérico con parámetro (RECOMENDADO)
+        window.location.href = '@Url.Action("DetalleCurso", "SIGA")?codigo=' + codigo;
+        
+        // Opción 3: Si es una redirección simple (sin ASP.NET)
+        // window.location.href = '/SIGA/DetalleCurso?codigo=' + codigo;
+        
+        // Opción 4: Si quieres usar nombres específicos
+        /*
+        var rutas = {
+            'FAF': '@Url.Action("Antro", "SIGA")',
+            'FHD': '@Url.Action("Derecho", "SIGA")',
+            'HC3': '@Url.Action("Historia", "SIGA")',
+            'JP1': '@Url.Action("Penal", "SIGA")',
+            'LF': '@Url.Action("Logica", "SIGA")',
+            'PC1': '@Url.Action("Consti", "SIGA")'
+        };
+        window.location.href = rutas[codigo];
+        */
+    }
+
+    function goBackToSummary(event) {
+        event.preventDefault();
+        // Vuelve a la página anterior
+        history.back();
+        // O si tienes una URL específica:
+        // window.location.href = '@Url.Action("Resumen", "SIGA")';
+    }
+</script>
