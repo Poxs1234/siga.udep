@@ -421,3 +421,16 @@ body {
     color: #e74c3c;
     font-weight: bold;
 }
+
+
+.cuadro {
+    border: 1px solid #000000;  /* Borde negro */
+    background-color: #ffffff;  /* Fondo blanco */
+    padding: 30px;              /* Espaciado interno */
+    max-width: 700px;           /* Ancho del cuadro */
+    margin: 20px auto;          /* Centrado */
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #000000;
+}
