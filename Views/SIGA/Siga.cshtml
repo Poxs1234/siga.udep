@@ -31,9 +31,9 @@
 
             <nav class="sidebar-menu">
                 <ul class="main-menu">
-                    <li><a href="#" data-view="view-avisos"><i class="fa-solid fa-flag menu-icon"></i> Avisos <i class="fa-solid fa-chevron-right arrow"></i></a></li>
+                    <li class="active"><a href="#" data-view="view-avisos"><i class="fa-solid fa-flag menu-icon"></i> Avisos <i class="fa-solid fa-chevron-right arrow"></i></a></li>
                     
-                    <li class="active"><a href="#" data-view="view-mis-asignaturas"><i class="fa-solid fa-book menu-icon"></i> Mis asignaturas <i class="fa-solid fa-chevron-right arrow"></i></a></li>
+                    <li><a href="#" data-view="view-mis-asignaturas"><i class="fa-solid fa-book menu-icon"></i> Mis asignaturas <i class="fa-solid fa-chevron-right arrow"></i></a></li>
                     
                     <li><a href="#"><i class="fa-solid fa-clock menu-icon"></i> Mi horario <i class="fa-solid fa-chevron-right arrow"></i></a></li>
                     <li><a href="#"><i class="fa-solid fa-bookmark menu-icon"></i> Mi perfil académico <i class="fa-solid fa-chevron-right arrow"></i></a></li>
@@ -66,11 +66,11 @@
             </header>
 
             <div class="content-body">
-                <div id="view-avisos" class="page-view" style="display: none;">
+                <div id="view-avisos" class="page-view" style="display: block;">
                     @{ await Html.RenderPartialAsync("Avisos"); }
                 </div>
 
-                <div id="view-mis-asignaturas" class="page-view">
+                <div id="view-mis-asignaturas" class="page-view" style="display: none;">
                     @{ await Html.RenderPartialAsync("MisAsignaturas"); }
                 </div>
             </div>
@@ -127,7 +127,7 @@
                 });
             });
 
-            showView('view-mis-asignaturas');
+            showView('view-avisos');
         });
         // Función para mostrar el detalle de un curso específico
         function showCourseDetails(courseCode, courseName) {
